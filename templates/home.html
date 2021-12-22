@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<title>Home</title>
+<style type="text/css">
+/*body ,html{font-family: Arial, Helvetica, sans-serif;background-color: #967BB6;}*/
+form{
+    width:fit-content;
+    padding: 60px;
+    height:fit-content;
+    margin:0 auto;
+    /*margin-top: 0%;*/
+    background-color: black;
+}
+/* Full-width input fields */
+.form-control {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom:25px;
+  font-family:"Courier New", cursive;
+}
+.form-control:focus{
+  background-color: #E2A76F;
+}
+
+/* Set a style for all buttons */
+button{
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  margin: 20px auto;
+  padding: 15px;
+      box-shadow: 0px 5px 5px #ccc;
+      border-radius: 5px;
+      border-top: 1px solid #e9e9e9;
+  display:inline-block;
+  margin-left: 400px;
+  margin-top: 40px;
+  text-align:center;
+}
+label {
+  color: white;
+}
+
+.btn:hover{
+  background-color:#9131d2; outline:none;  border-radius: 5px; color:#f1f1f1;
+}
+</style>
+<body>
+<form action="search">
+    <div class="container">
+      <label for="ck"><b>Consumer Id(Client Id)</b></label>
+          <input type="float" class="form-control" id="ck" name="Consumer_ID" placeholder="Enter Consumer ID(Client ID)">
+      <label for="cs"><b>Consumer Key(Client Secret Key)</b></label>
+          <input type="float" class="form-control" id="cs" name="Consumer_Key" placeholder="Enter Consumer Key(Client Key)">
+      <label for="un"><b>Username</b></label>
+          <input type="float" class="form-control" id="username" name="username" placeholder="Enter Username/email">
+      <label for="ps"><b>Password with security token</b></label>
+          <input type="float" class="form-control" id="lon" name="password" placeholder="Enter Password with security token">
+      <button type="submit" name="customsearch" class="btn"/>Custom Search</button>
+        <button type="submit" name="defaultsearch" class="btn"/>Default Search</button> 
+    </div>
+  </form>
+</body>
+{% endblock %}
