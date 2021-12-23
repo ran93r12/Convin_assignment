@@ -75,7 +75,7 @@ Account and Contact data
 
 
 
-## API Reference
+## Reference
 
 #### Details of users, accounts and contacts in salesforce
 
