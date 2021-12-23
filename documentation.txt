@@ -1,0 +1,15 @@
+# Installation
+
+
+
+Intially clone the project and nagivate to the directory to where it exists.
+Now, the system should have basic requirement of Python >3 and Xampp with MySQL.
+Create Virtual Environment with python and install all the dependencies into the virtual environment
+While installing requirements there may be some issues, we dicsuss those there
+Error in mysqlclient then - [sudo apt-get install python3-dev default-libmysqlclient-dev build-essential]
+Error in operation.py then - 
+Go to django folder, then go to this path:
+cd /usr/lib/python3/dist-packages/django\db\backends\mysql  #for linux
+then go to operations.py and find query = query.decode(errors='replace'). Remove the line and put query = errors='replace'
+
+And all necessary changes were already made in the files in repo.
